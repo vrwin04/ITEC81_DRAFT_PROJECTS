@@ -22,53 +22,42 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Button1 = New Button()
-        Button2 = New Button()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
+        btnLogIn = New Button()
+        username_tb = New TextBox()
+        password_tb = New TextBox()
         SuspendLayout()
         ' 
-        ' Button1
+        ' btnLogIn
         ' 
-        Button1.Location = New Point(576, 308)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(88, 38)
-        Button1.TabIndex = 0
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
+        btnLogIn.Location = New Point(475, 368)
+        btnLogIn.Name = "btnLogIn"
+        btnLogIn.Size = New Size(199, 65)
+        btnLogIn.TabIndex = 0
+        btnLogIn.Text = "Log In"
+        btnLogIn.UseVisualStyleBackColor = True
         ' 
-        ' Button2
+        ' username_tb
         ' 
-        Button2.Location = New Point(576, 367)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(88, 38)
-        Button2.TabIndex = 1
-        Button2.Text = "Button2"
-        Button2.UseVisualStyleBackColor = True
+        username_tb.Location = New Point(517, 264)
+        username_tb.Name = "username_tb"
+        username_tb.Size = New Size(119, 27)
+        username_tb.TabIndex = 2
         ' 
-        ' TextBox1
+        ' password_tb
         ' 
-        TextBox1.Location = New Point(559, 210)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(119, 27)
-        TextBox1.TabIndex = 2
-        ' 
-        ' TextBox2
-        ' 
-        TextBox2.Location = New Point(559, 254)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(119, 27)
-        TextBox2.TabIndex = 3
+        password_tb.Location = New Point(517, 308)
+        password_tb.Name = "password_tb"
+        password_tb.Size = New Size(119, 27)
+        password_tb.TabIndex = 3
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1280, 720)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
+        Controls.Add(password_tb)
+        Controls.Add(username_tb)
+        Controls.Add(btnLogIn)
         FormBorderStyle = FormBorderStyle.None
         Name = "Form1"
         StartPosition = FormStartPosition.CenterScreen
@@ -77,9 +66,8 @@ Partial Class Form1
         PerformLayout()
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents btnLogIn As Button
+    Friend WithEvents username_tb As TextBox
+    Friend WithEvents password_tb As TextBox
 
 End Class
